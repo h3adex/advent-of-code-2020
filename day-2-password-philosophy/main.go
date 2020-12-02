@@ -9,32 +9,37 @@ import (
 	"strings"
 )
 
-func policyV1(letter string, words string) (int, error){
+type Password struct {
+	number1 int
+	number2 int
+	letter string
+	password string
+}
+
+func (p *Password) policyV1() (int, error){
 	var counter = 0
-	for _, char := range words {
-		if string(char) == letter {
+	for _, char := range p.password {
+		if string(char) == p.letter {
 			counter ++
 		}
 	}
 	return counter, nil
 }
 
-func MinMax(words string) (int, int, error){
-	min, err := strconv.Atoi(strings.Split(words, "-")[0])
-	if err != nil{
-		return 0, 0, err
-	}
-	max, err := strconv.Atoi(strings.Split(words, "-")[1])
-	if err != nil{
-		return 0, 0, err
-	}
-	return min, max, nil
+func (p *Password) parsePasswordString(s string){
+	fields := strings.FieldsFunc(s, func(r rune) bool {
+		return strings.ContainsRune(" :-", r)
+	})
+	p.number1, _ = strconv.Atoi(fields[0])
+	p.number2, _ = strconv.Atoi(fields[1])
+	p.letter = fields[2]
+	p.password = fields[3]
+
 }
 
-func policyV2(position1 int, position2 int, letter string, words string) error{
-
-	l1 := string(words[position1-1]) == letter
-	l2 := string(words[position2-1]) == letter
+func (p *Password) policyV2() error{
+	l1 := string(p.password[p.number1-1]) == p.letter
+	l2 := string(p.password[p.number2-1]) == p.letter
 	if l1 && !l2 || l2 && !l1 {
 		return nil
 	}
@@ -58,34 +63,22 @@ func main() {
 	_ = file.Close()
 
 	var policySum1 = 0
+	var policySum2 = 0
+	var password = Password{}
+
 	for _, line := range input {
-		splitString := strings.Split(line, " ")
-		num, err := policyV1(strings.Split(splitString[1], ":")[0], splitString[2])
-		if err != nil {
-			fmt.Print(err)
-		}
-		min, max, err := MinMax(splitString[0])
-		if err != nil {
-			fmt.Println(err)
-		}
-		if num >= min && num <= max {
+		password.parsePasswordString(line)
+		num, err := password.policyV1()
+		if err != nil {}
+
+		if num >= password.number1 && num <= password.number2 {
 			policySum1++
 		}
 
+		if password.policyV2() == nil{
+			policySum2++
+		}
 	}
 	fmt.Printf("Policy 1: found %d policy1 \n", policySum1)
-
-
-	var policy2 = 0
-	for _, line := range input {
-		splitString := strings.Split(line, " ")
-		pos1, pos2, err := MinMax(splitString[0])
-		if err != nil {
-			fmt.Println(err)
-		}
-		if policyV2(pos1, pos2, strings.Split(splitString[1], ":")[0], splitString[2]) == nil{
-			policy2++
-		}
-	}
-	fmt.Printf("Policy 2: found %d policy2 \n", policy2)
+	fmt.Printf("Policy 2: found %d policy2 \n", policySum2)
 }

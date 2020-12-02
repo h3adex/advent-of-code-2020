@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e1b9f385-3299-42e4-9721-3b42a66e1de1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/day-2-password-philosophy/Readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day-2-password-philosophy/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day-2-password-philosophy/main.go" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" path="/usr/lib/go-1.15" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1l3W0xozBqD7WVDjyNzwnAD3I9D" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/day-2-password-philosophy" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/day-1-report-repair" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Go Build.go build main.go (1)">
+    <configuration name="go build AdventOfCode" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="AdventOfCode" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/main.go" />
+      <package value="AdventOfCode" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build AdventOfCode/day-2-password-philosophy" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="AdventOfCode" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/day-2-password-philosophy/main.go" />
+      <package value="AdventOfCode/day-2-password-philosophy" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build main.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="AdventOfCode" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/day-2-password-philosophy/main.go" />
+      <package value="AdventOfCode" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="AdventOfCode" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/day-1-report-repair/main.go" />
+      <package value="AdventOfCode" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build main.go (1)" />
+        <item itemvalue="Go Build.go build AdventOfCode/day-2-password-philosophy" />
+        <item itemvalue="Go Build.go build main.go" />
+        <item itemvalue="Go Build.go build AdventOfCode" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2312" y="92" key="#xdebugger.evaluate" timestamp="1606909833020">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2312" y="92" key="#xdebugger.evaluate/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1606909833020" />
+    <state width="1854" height="266" key="GridCell.Tab.0.bottom" timestamp="1606911208575">
+      <screen x="0" y="31" width="1920" height="1049" />
+    </state>
+    <state width="1854" height="266" key="GridCell.Tab.0.bottom/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1606911208575" />
+    <state width="1854" height="266" key="GridCell.Tab.0.center" timestamp="1606911208574">
+      <screen x="0" y="31" width="1920" height="1049" />
+    </state>
+    <state width="1854" height="266" key="GridCell.Tab.0.center/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1606911208574" />
+    <state width="1854" height="266" key="GridCell.Tab.0.left" timestamp="1606911208574">
+      <screen x="0" y="31" width="1920" height="1049" />
+    </state>
+    <state width="1854" height="266" key="GridCell.Tab.0.left/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1606911208574" />
+    <state width="1854" height="266" key="GridCell.Tab.0.right" timestamp="1606911208574">
+      <screen x="0" y="31" width="1920" height="1049" />
+    </state>
+    <state width="1854" height="266" key="GridCell.Tab.0.right/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1606911208574" />
+    <state width="1854" height="329" key="GridCell.Tab.1.bottom" timestamp="1606909833219">
+      <screen x="0" y="31" width="1920" height="1049" />
+    </state>
+    <state width="1854" height="329" key="GridCell.Tab.1.bottom/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1606909833219" />
+    <state width="1854" height="329" key="GridCell.Tab.1.center" timestamp="1606909833219">
+      <screen x="0" y="31" width="1920" height="1049" />
+    </state>
+    <state width="1854" height="329" key="GridCell.Tab.1.center/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1606909833219" />
+    <state width="1854" height="329" key="GridCell.Tab.1.left" timestamp="1606909833219">
+      <screen x="0" y="31" width="1920" height="1049" />
+    </state>
+    <state width="1854" height="329" key="GridCell.Tab.1.left/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1606909833219" />
+    <state width="1854" height="329" key="GridCell.Tab.1.right" timestamp="1606909833219">
+      <screen x="0" y="31" width="1920" height="1049" />
+    </state>
+    <state width="1854" height="329" key="GridCell.Tab.1.right/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1606909833219" />
+  </component>
+</project>
