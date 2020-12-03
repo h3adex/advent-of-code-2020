@@ -14,14 +14,19 @@ type Trees struct {
 	num int
 }
 
-func (t *Trees) countTreesInArea(area [] string) int{
-	for t.x < len(area)-1 {
-		//35 -> #
-		if area[t.x][t.y] == '#' {
+func (t *Trees) calcSlope(area []string) int {
+	width := len(area[0])
+	for {
+		if t.y > len(area)-1 {
+			break
+		}
+		line := area[t.y]
+		c := line[t.x%width]
+		if c == '#' {
 			t.num++
 		}
-		t.y = (t.y + t.right) % len(area[t.x])
-		t.x += t.down
+		t.x += t.right
+		t.y += t.down
 	}
 	return t.num
 }
@@ -32,7 +37,7 @@ func main() {
 	if err != nil {
 		fmt.Println(err)
 	}
-	split := strings.Split(string(content), "\n")
+	split := strings.Split(strings.TrimRight(string(content), "\n"), "\n")
 
 	trees := Trees{
 		x: 0,
@@ -42,6 +47,34 @@ func main() {
 		y: 0,
 	}
 
-	fmt.Println(trees.countTreesInArea(split))
+	fmt.Println(trees.calcSlope(split))
+
+	slopes := []struct{ x, y int }{
+		{1, 1},
+		{3, 1},
+		{5, 1},
+		{7, 1},
+		{1, 2},
+	}
+
+	var res int
+	for _, slope := range slopes{
+		trees := Trees{
+			x: 0,
+			num: 0,
+			right: slope.x,
+			down: slope.y,
+			y: 0,
+		}
+
+		val := trees.calcSlope(split)
+		fmt.Println(val)
+		if res == 0 {
+			res = val
+		}else{
+			res *= val
+		}
+	}
+	fmt.Println(res)
 
 }
